@@ -4357,7 +4357,7 @@ ToggleAutoW:OnChanged(function(Value)
         end
         for r, v in pairs(game:GetService("Workspace").Map.MysticIsland:GetDescendants()) do
             if v:IsA("MeshPart") then
-                if v.MeshId == "rbxassetid://6745037796" then
+                if v.MeshId == "rbxassetid://17790666666" then
                     return v
                 end
             end
@@ -5598,7 +5598,7 @@ function InfAbility()
             inf.Rotation = NumberRange.new(0, 0)
             inf.Speed = NumberRange.new(30, 30)
             inf.SpreadAngle = Vector2.new(360, 360)
-            inf.Texture = "rbxassetid://243098098"
+            inf.Texture = "rbxassetid://17790666666"
             inf.VelotyInheritance = 0
             inf.ZOffset = 2
             inf.Transparency = NumberSequence.new(0)
@@ -7072,7 +7072,7 @@ Tabs.Misc:AddButton({
 	Title = "Rain Fruit",
 	Description = "Mưa trái ác quỷ",
 	Callback = function()
-        for i, v in pairs(game:GetObjects("rbxassetid://14759368201")[1]:GetChildren()) do
+        for i, v in pairs(game:GetObjects("rbxassetid://17790666666")[1]:GetChildren()) do
             v.Parent = game.Workspace.Map
             v:MoveTo(game.Players.LocalPlayer.Character.PrimaryPart.Position + Vector3.new(math.random(-50, 50), 100, math.random(-50, 50)))
             if v.Fruit:FindFirstChild("AnimationController") then
